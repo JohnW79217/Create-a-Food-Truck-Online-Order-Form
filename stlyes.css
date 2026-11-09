@@ -1,0 +1,184 @@
+/* Page background and typography */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f4e9;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header, main, footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #c0392b;
+  margin-bottom: 0.3em;
+}
+
+h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #e74c3c;
+  padding-bottom: 0.3em;
+}
+
+.description {
+  font-size: 1.1em;
+  margin: 0.5em 0;
+}
+
+/* Food truck photo */
+.truck-logo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1em;
+  display: block;
+}
+
+/* Form container and sections */
+form {
+  background-color: #fff;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+fieldset {
+  border: 2px solid #e74c3c;
+  border-radius: 8px;
+  margin-bottom: 1.5em;
+  padding: 1em 1.2em;
+}
+
+legend {
+  font-weight: bold;
+  color: #c0392b;
+  padding: 0 0.5em;
+  font-size: 1.1em;
+}
+
+.form-group {
+  margin-bottom: 1em;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.6em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #e74c3c;
+  border-color: #e74c3c;
+}
+
+/* Menu items */
+.menu-item {
+  margin-bottom: 0.8em;
+  padding: 0.5em;
+  background-color: #fdf2e9;
+  border-radius: 4px;
+}
+
+.menu-item label {
+  font-weight: normal;
+  display: inline;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+
+button {
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: #27ae60;
+  color: white;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  background-color: #219653;
+}
+
+button[type="reset"] {
+  background-color: #95a5a6;
+  color: white;
+}
+
+button[type="reset"]:hover,
+button[type="reset"]:focus {
+  background-color: #7f8c8d;
+}
+
+.instructions {
+  font-style: italic;
+  color: #555;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 2em;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  header, main, footer {
+    padding: 15px;
+  }
+  fieldset {
+    padding: 0.8em;
+  }
+  .button-group {
+    flex-direction: column;
+  }
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 390px) {
+  h1 {
+    font-size: 1.6em;
+  }
+  .menu-item {
+    font-size: 0.95em;
+  }
+  input, select, textarea {
+    font-size: 16px; /* prevents zoom on mobile */
+  }
+}

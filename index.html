@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Street Tacos Express - Online Order</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800&auto=format&fit=crop" 
+         alt="Street Tacos Express food truck logo" class="truck-logo">
+    <h1>Street Tacos Express</h1>
+    <p class="description">
+      Authentic street-style tacos, burritos, and Mexican street food made fresh daily. 
+      We serve the Philadelphia area with bold flavors and quick service.
+    </p>
+    <p><strong>Type of food:</strong> Mexican street food &amp; tacos</p>
+    <p><strong>Location / Service area:</strong> Philadelphia metro area (Center City, University City, and nearby neighborhoods)</p>
+  </header>
+
+  <main>
+    <h2>Place Your Order Online</h2>
+    <p class="instructions">Fill out the form below to place your order for pickup. All fields marked with * are required.</p>
+
+    <form action="#" method="post">
+      <!-- A. Customer Information -->
+      <fieldset>
+        <legend>A. Customer Information</legend>
+        <div class="form-group">
+          <label for="customer-name">Customer Name *</label>
+          <input type="text" id="customer-name" name="customer-name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+      </fieldset>
+
+      <!-- B. Food Selection -->
+      <fieldset>
+        <legend>B. Food Selection</legend>
+        <p>Select the items you want (check all that apply):</p>
+
+        <div class="menu-item">
+          <input type="checkbox" id="item1" name="items" value="Al Pastor Tacos">
+          <label for="item1"><strong>Al Pastor Tacos</strong> – Marinated pork with pineapple, onion, and cilantro. $12</label>
+        </div>
+        <div class="menu-item">
+          <input type="checkbox" id="item2" name="items" value="Carne Asada Tacos">
+          <label for="item2"><strong>Carne Asada Tacos</strong> – Grilled steak with fresh salsa and lime. $13</label>
+        </div>
+        <div class="menu-item">
+          <input type="checkbox" id="item3" name="items" value="Chicken Burrito">
+          <label for="item3"><strong>Chicken Burrito</strong> – Grilled chicken, rice, beans, cheese, and pico. $11</label>
+        </div>
+        <div class="menu-item">
+          <input type="checkbox" id="item4" name="items" value="Veggie Quesadilla">
+          <label for="item4"><strong>Veggie Quesadilla</strong> – Grilled veggies, cheese, and guacamole. $10</label>
+        </div>
+        <div class="menu-item">
+          <input type="checkbox" id="item5" name="items" value="Churros">
+          <label for="item5"><strong>Churros</strong> – Fresh fried churros with cinnamon sugar. $6</label>
+        </div>
+      </fieldset>
+
+      <!-- C. Order Customization -->
+      <fieldset>
+        <legend>C. Order Customization</legend>
+
+        <div class="form-group">
+          <p>Order Size *</p>
+          <input type="radio" id="size-regular" name="size" value="regular" checked>
+          <label for="size-regular">Regular</label>
+          <input type="radio" id="size-large" name="size" value="large">
+          <label for="size-large">Large (+$2)</label>
+        </div>
+
+        <div class="form-group">
+          <p>Extra Toppings (check all that apply):</p>
+          <input type="checkbox" id="topping1" name="toppings" value="guacamole">
+          <label for="topping1">Guacamole (+$1.50)</label><br>
+          <input type="checkbox" id="topping2" name="toppings" value="extra-cheese">
+          <label for="topping2">Extra Cheese (+$1)</label><br>
+          <input type="checkbox" id="topping3" name="toppings" value="sour-cream">
+          <label for="topping3">Sour Cream (+$0.75)</label><br>
+          <input type="checkbox" id="topping4" name="toppings" value="jalapenos">
+          <label for="topping4">Jalapeños (free)</label>
+        </div>
+
+        <div class="form-group">
+          <label for="preference">Drink / Side Preference</label>
+          <select id="preference" name="preference">
+            <option value="">-- Select an option --</option>
+            <option value="horchata">Horchata</option>
+            <option value="agua-fresca">Agua Fresca</option>
+            <option value="soda">Soda</option>
+            <option value="chips-salsa">Chips &amp; Salsa</option>
+            <option value="none">No side / drink</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="special">Special Instructions</label>
+          <textarea id="special" name="special" rows="4" placeholder="Any allergies, spice level requests, or other notes..."></textarea>
+        </div>
+      </fieldset>
+
+      <!-- D. Pickup Information -->
+      <fieldset>
+        <legend>D. Pickup Information</legend>
+        <div class="form-group">
+          <label for="pickup-time">Preferred Pickup Date / Time *</label>
+          <input type="text" id="pickup-time" name="pickup-time" placeholder="e.g., Nov 9 at 12:30 PM" required>
+        </div>
+        <div class="form-group">
+          <label for="pickup-name">Pickup Name (if different)</label>
+          <input type="text" id="pickup-name" name="pickup-name">
+        </div>
+        <div class="form-group">
+          <label for="pickup-notes">Additional Pickup Instructions</label>
+          <textarea id="pickup-notes" name="pickup-notes" rows="3" placeholder="Parking notes, landmark, etc."></textarea>
+        </div>
+      </fieldset>
+
+      <!-- E. Form Buttons -->
+      <div class="button-group">
+        <button type="submit">Submit Order</button>
+        <button type="reset">Reset Form</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Street Tacos Express. Online ordering for pickup only.</p>
+  </footer>
+</body>
+</html>
